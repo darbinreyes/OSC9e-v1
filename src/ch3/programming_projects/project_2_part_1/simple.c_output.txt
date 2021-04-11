@@ -1,0 +1,176 @@
+This is the output of the program, simple.c. This output was obtained using the
+`dmesg` command to print out the contents of the kernel log buffer. The line
+"S PID CMD" means state, process ID, command name, respectively. Below that line
+is the value of corresponding `struct task_struct` member for each process in
+the system. By comparing this  to the output of the `ps -el` command I confirmed
+that my program is correct. For instance in the output of the `ps` command we
+see
+
+```
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+4 S     0     1     0  0  80   0 -  5727 ep_pol ?        00:00:01 systemd
+```
+
+which is consistent with
+
+```
+S PID CMD
+1 1 systemd
+```
+
+
+/* ******* */
+[11292.271331] Dijkstra Loading Module
+[11292.271333] S PID CMD
+[11292.271335] 1 1 systemd
+[11292.271336] 1 2 kthreadd
+[11292.271337] 1 3 ksoftirqd/0
+[11292.271340] 1 5 kworker/0:0H
+[11292.271341] 1 6 kworker/u2:0
+[11292.271342] 1 7 rcu_sched
+[11292.271343] 1 8 rcu_bh
+[11292.271344] 1 9 migration/0
+[11292.271345] 1 10 watchdog/0
+[11292.271346] 1 11 khelper
+[11292.271348] 1 12 kdevtmpfs
+[11292.271349] 1 13 netns
+[11292.271350] 1 14 khungtaskd
+[11292.271351] 1 15 writeback
+[11292.271353] 1 16 ksmd
+[11292.271354] 1 17 khugepaged
+[11292.271355] 1 18 crypto
+[11292.271356] 1 19 kintegrityd
+[11292.271357] 1 20 bioset
+[11292.271359] 1 21 kblockd
+[11292.271360] 1 23 kswapd0
+[11292.271410] 1 24 fsnotify_mark
+[11292.271413] 1 30 kthrotld
+[11292.271414] 1 31 ipv6_addrconf
+[11292.271415] 1 32 deferwq
+[11292.271416] 1 66 khubd
+[11292.271418] 1 67 ata_sff
+[11292.271419] 1 68 kpsmoused
+[11292.271420] 1 70 scsi_eh_0
+[11292.271422] 1 71 scsi_tmf_0
+[11292.271423] 1 72 scsi_eh_1
+[11292.271424] 1 73 kworker/u2:2
+[11292.271425] 1 74 scsi_tmf_1
+[11292.271426] 1 75 scsi_eh_2
+[11292.271427] 1 76 scsi_tmf_2
+[11292.271428] 1 82 kworker/0:1H
+[11292.271429] 1 105 jbd2/sda1-8
+[11292.271430] 1 106 ext4-rsv-conver
+[11292.271431] 1 137 kauditd
+[11292.271432] 1 142 systemd-journal
+[11292.271432] 130 145 systemd-udevd
+[11292.271433] 1 197 iprt-VBoxWQueue
+[11292.271434] 1 205 ttm_swap
+[11292.271435] 1 208 hd-audio0
+[11292.271436] 1 404 rpcbind
+[11292.271437] 1 413 rpc.statd
+[11292.271438] 1 418 rpciod
+[11292.271439] 1 420 nfsiod
+[11292.271440] 1 427 rpc.idmapd
+[11292.271442] 1 429 accounts-daemon
+[11292.271443] 1 430 cron
+[11292.271444] 1 431 ModemManager
+[11292.271446] 1 432 rsyslogd
+[11292.271447] 1 433 avahi-daemon
+[11292.271448] 1 435 NetworkManager
+[11292.271450] 1 438 atd
+[11292.271451] 1 441 dbus-daemon
+[11292.271453] 1 460 systemd-logind
+[11292.271454] 1 467 avahi-daemon
+[11292.271456] 1 468 acpid
+[11292.271457] 1 474 sshd
+[11292.271458] 1 489 cfg80211
+[11292.271460] 1 497 iprt
+[11292.271461] 1 501 minissdpd
+[11292.271462] 1 507 polkitd
+[11292.271464] 1 508 cups-browsed
+[11292.271466] 1 509 agetty
+[11292.271467] 1 577 dhclient
+[11292.271468] 1 804 exim4
+[11292.271470] 1 943 gdm3
+[11292.271471] 1 954 Xorg
+[11292.271472] 1 1004 upowerd
+[11292.271473] 1 1013 colord
+[11292.271474] 1 1023 rtkit-daemon
+[11292.271475] 1 1058 wpa_supplicant
+[11292.271476] 1 1061 packagekitd
+[11292.271477] 1 1072 gdm-session-wor
+[11292.271478] 1 1076 systemd
+[11292.271479] 1 1077 (sd-pam)
+[11292.271480] 1 1081 gnome-keyring-d
+[11292.271481] 1 1084 x-session-manag
+[11292.271482] 1 1127 VBoxClient
+[11292.271483] 1 1132 VBoxClient
+[11292.271484] 1 1140 VBoxClient
+[11292.271485] 1 1145 VBoxClient
+[11292.271487] 1 1150 VBoxClient
+[11292.271488] 1 1160 dbus-launch
+[11292.271489] 1 1165 dbus-daemon
+[11292.271490] 1 1174 ssh-agent
+[11292.271492] 1 1177 dbus-launch
+[11292.271493] 1 1179 dbus-daemon
+[11292.271494] 1 1185 at-spi-bus-laun
+[11292.271496] 1 1189 dbus-daemon
+[11292.271497] 1 1193 at-spi2-registr
+[11292.271498] 1 1205 gnome-settings-
+[11292.271500] 1 1220 pulseaudio
+[11292.271501] 1 1222 gvfsd
+[11292.271502] 1 1227 gvfsd-fuse
+[11292.271504] 1 1240 gvfs-udisks2-vo
+[11292.271505] 1 1241 start-pulseaudi
+[11292.271506] 1 1242 xprop
+[11292.271507] 1 1244 udisksd
+[11292.271509] 1 1253 gvfs-goa-volume
+[11292.271510] 1 1256 goa-daemon
+[11292.271511] 1 1265 mission-control
+[11292.271513] 1 1266 gvfs-gphoto2-vo
+[11292.271514] 1 1270 gvfs-mtp-volume
+[11292.271515] 1 1276 gvfs-afc-volume
+[11292.271517] 1 1281 gnome-shell
+[11292.271518] 1 1286 gsd-printer
+[11292.271519] 1 1298 gnome-shell-cal
+[11292.271520] 1 1302 evolution-sourc
+[11292.271521] 1 1315 evolution-alarm
+[11292.271523] 1 1316 nm-applet
+[11292.271524] 1 1318 tracker-miner-u
+[11292.271525] 1 1325 VBoxClient
+[11292.271526] 1 1338 VBoxClient
+[11292.271528] 1 1342 nautilus
+[11292.271528] 1 1348 VBoxClient
+[11292.271529] 1 1351 tracker-store
+[11292.271530] 1 1368 tracker-extract
+[11292.271531] 1 1376 evolution-calen
+[11292.271532] 1 1377 zeitgeist-datah
+[11292.271533] 1 1378 tracker-miner-f
+[11292.271535] 1 1379 tracker-miner-a
+[11292.271536] 1 1383 applet.py
+[11292.271537] 1 1385 zeitgeist-daemo
+[11292.271539] 1 1395 gconfd-2
+[11292.271540] 1 1403 zeitgeist-fts
+[11292.271541] 1 1422 cat
+[11292.271542] 1 1436 gvfsd-trash
+[11292.271543] 1 1470 gvfsd-metadata
+[11292.271544] 1 1473 gvfsd-burn
+[11292.271545] 1 2587 cupsd
+[11292.271546] 1 3876 sshd
+[11292.271546] 1 3893 sshd
+[11292.271547] 1 3894 bash
+[11292.271548] 1 6198 sshd
+[11292.271549] 1 6205 sshd
+[11292.271550] 1 6206 bash
+[11292.271550] 1 11045 su
+[11292.271551] 1 11059 bash
+[11292.271552] 1 28856 su
+[11292.271553] 1 28865 bash
+[11292.271554] 1 568 kworker/0:2
+[11292.271555] 1 3807 sshd
+[11292.271556] 1 3906 sshd
+[11292.271557] 1 3907 sftp-server
+[11292.271558] 1 16939 kworker/0:0
+[11292.271560] 1 18290 kworker/0:1
+[11292.271561] 1 18870 VBoxClient
+[11292.271562] 0 18898 insmod

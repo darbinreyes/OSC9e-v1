@@ -1,0 +1,276 @@
+oscreader@OSC:project_2_part_2$ ps -eLf
+UID        PID  PPID   LWP  C NLWP STIME TTY          TIME CMD
+root         1     0     1  0    1 13:23 ?        00:00:01 /sbin/init
+root         2     0     2  0    1 13:23 ?        00:00:00 [kthreadd]
+root         3     2     3  0    1 13:23 ?        00:00:00 [ksoftirqd/0]
+root         5     2     5  0    1 13:23 ?        00:00:00 [kworker/0:0H]
+root         6     2     6  0    1 13:23 ?        00:00:00 [kworker/u2:0]
+root         7     2     7  0    1 13:23 ?        00:00:01 [rcu_sched]
+root         8     2     8  0    1 13:23 ?        00:00:00 [rcu_bh]
+root         9     2     9  0    1 13:23 ?        00:00:00 [migration/0]
+root        10     2    10  0    1 13:23 ?        00:00:00 [watchdog/0]
+root        11     2    11  0    1 13:23 ?        00:00:00 [khelper]
+root        12     2    12  0    1 13:23 ?        00:00:00 [kdevtmpfs]
+root        13     2    13  0    1 13:23 ?        00:00:00 [netns]
+root        14     2    14  0    1 13:23 ?        00:00:00 [khungtaskd]
+root        15     2    15  0    1 13:23 ?        00:00:00 [writeback]
+root        16     2    16  0    1 13:23 ?        00:00:00 [ksmd]
+root        17     2    17  0    1 13:23 ?        00:00:00 [khugepaged]
+root        18     2    18  0    1 13:23 ?        00:00:00 [crypto]
+root        19     2    19  0    1 13:23 ?        00:00:00 [kintegrityd]
+root        20     2    20  0    1 13:23 ?        00:00:00 [bioset]
+root        21     2    21  0    1 13:23 ?        00:00:00 [kblockd]
+root        23     2    23  0    1 13:23 ?        00:00:00 [kswapd0]
+root        24     2    24  0    1 13:23 ?        00:00:00 [fsnotify_mark]
+root        30     2    30  0    1 13:23 ?        00:00:00 [kthrotld]
+root        31     2    31  0    1 13:23 ?        00:00:00 [ipv6_addrconf]
+root        32     2    32  0    1 13:23 ?        00:00:00 [deferwq]
+root        66     2    66  0    1 13:23 ?        00:00:00 [ata_sff]
+root        67     2    67  0    1 13:23 ?        00:00:00 [khubd]
+root        68     2    68  0    1 13:23 ?        00:00:00 [kpsmoused]
+root        71     2    71  0    1 13:23 ?        00:00:00 [scsi_eh_0]
+root        72     2    72  0    1 13:23 ?        00:00:00 [scsi_tmf_0]
+root        73     2    73  0    1 13:23 ?        00:00:00 [scsi_eh_1]
+root        74     2    74  0    1 13:23 ?        00:00:00 [kworker/u2:2]
+root        75     2    75  0    1 13:23 ?        00:00:00 [scsi_tmf_1]
+root        76     2    76  0    1 13:23 ?        00:00:00 [scsi_eh_2]
+root        77     2    77  0    1 13:23 ?        00:00:00 [scsi_tmf_2]
+root        82     2    82  0    1 13:23 ?        00:00:00 [kworker/0:1H]
+root       105     2   105  0    1 13:23 ?        00:00:00 [jbd2/sda1-8]
+root       106     2   106  0    1 13:23 ?        00:00:00 [ext4-rsv-conver]
+root       137     2   137  0    1 13:23 ?        00:00:00 [kauditd]
+root       144     1   144  0    1 13:23 ?        00:00:00 /lib/systemd/systemd-udevd
+root       153     1   153  0    1 13:23 ?        00:00:09 /lib/systemd/systemd-journald
+root       196     2   196  0    1 13:23 ?        00:00:00 [ttm_swap]
+root       197     2   197  0    1 13:23 ?        00:00:00 [iprt-VBoxWQueue]
+root       201     2   201  0    1 13:23 ?        00:00:00 [hd-audio0]
+root       403     1   403  0    1 13:23 ?        00:00:00 /sbin/rpcbind -w
+statd      412     1   412  0    1 13:23 ?        00:00:00 /sbin/rpc.statd
+root       417     2   417  0    1 13:23 ?        00:00:00 [rpciod]
+root       419     2   419  0    1 13:23 ?        00:00:00 [nfsiod]
+root       426     1   426  0    1 13:23 ?        00:00:00 /usr/sbin/rpc.idmapd
+root       428     1   428  0    3 13:23 ?        00:00:00 /usr/lib/accountsservice/accounts-daemon
+root       428     1   456  0    3 13:23 ?        00:00:00 /usr/lib/accountsservice/accounts-daemon
+root       428     1   459  0    3 13:23 ?        00:00:00 /usr/lib/accountsservice/accounts-daemon
+root       429     1   429  0    1 13:23 ?        00:00:00 /usr/sbin/cron -f
+root       430     1   430  0    3 13:23 ?        00:00:00 /usr/sbin/ModemManager
+root       430     1   453  0    3 13:23 ?        00:00:00 /usr/sbin/ModemManager
+root       430     1   458  0    3 13:23 ?        00:00:00 /usr/sbin/ModemManager
+root       431     1   431  0    4 13:23 ?        00:00:00 /usr/sbin/rsyslogd -n
+root       431     1   450  0    4 13:23 ?        00:00:00 /usr/sbin/rsyslogd -n
+root       431     1   451  0    4 13:23 ?        00:00:00 /usr/sbin/rsyslogd -n
+root       431     1   452  0    4 13:23 ?        00:00:00 /usr/sbin/rsyslogd -n
+avahi      432     1   432  0    1 13:23 ?        00:00:00 avahi-daemon: running [OSC.local]
+root       434     1   434  0    4 13:23 ?        00:00:00 /usr/sbin/NetworkManager --no-daemon
+root       434     1   489  0    4 13:23 ?        00:00:00 /usr/sbin/NetworkManager --no-daemon
+root       434     1   507  0    4 13:23 ?        00:00:00 /usr/sbin/NetworkManager --no-daemon
+root       434     1   508  0    4 13:23 ?        00:00:00 /usr/sbin/NetworkManager --no-daemon
+daemon     438     1   438  0    1 13:23 ?        00:00:00 /usr/sbin/atd -f
+message+   441     1   441  0    1 13:23 ?        00:00:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork
+avahi      442   432   442  0    1 13:23 ?        00:00:00 avahi-daemon: chroot helper
+root       461     1   461  0    1 13:23 ?        00:00:00 /lib/systemd/systemd-logind
+root       468     1   468  0    1 13:23 ?        00:00:00 /usr/sbin/acpid
+root       473     1   473  0    1 13:23 ?        00:00:00 /usr/sbin/cupsd -f
+root       474     1   474  0    1 13:23 ?        00:00:00 /usr/sbin/cups-browsed
+root       477     1   477  0    1 13:23 ?        00:00:00 /usr/sbin/sshd -D
+root       486     1   486  0    1 13:23 tty1     00:00:00 /sbin/agetty --noclear tty1 linux
+root       490     1   490  0    3 13:23 ?        00:00:01 /usr/lib/policykit-1/polkitd --no-debug
+root       490     1   502  0    3 13:23 ?        00:00:00 /usr/lib/policykit-1/polkitd --no-debug
+root       490     1   503  0    3 13:23 ?        00:00:00 /usr/lib/policykit-1/polkitd --no-debug
+root       496     2   496  0    1 13:23 ?        00:00:00 [iprt]
+root       506     2   506  0    1 13:23 ?        00:00:00 [cfg80211]
+root       517     1   517  0    1 13:23 ?        00:00:00 /usr/sbin/minissdpd -i 0.0.0.0
+root       774   434   774  0    1 13:23 ?        00:00:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-h
+Debian-+   785     1   785  0    1 13:23 ?        00:00:00 /usr/sbin/exim4 -bd -q30m
+root       944     1   944  0    4 13:23 ?        00:00:00 /usr/sbin/gdm3
+root       944     1   950  0    4 13:23 ?        00:00:00 /usr/sbin/gdm3
+root       944     1   951  0    4 13:23 ?        00:00:00 /usr/sbin/gdm3
+root       944     1   954  0    4 13:23 ?        00:00:00 /usr/sbin/gdm3
+root       955   944   955  0    1 13:23 tty7     00:00:06 /usr/bin/Xorg :0 -novtswitch -background none -noreset -ve
+root      1005     1  1005  0    3 13:23 ?        00:00:00 /usr/lib/upower/upowerd
+root      1005     1  1006  0    3 13:23 ?        00:00:00 /usr/lib/upower/upowerd
+root      1005     1  1007  0    3 13:23 ?        00:00:00 /usr/lib/upower/upowerd
+colord    1014     1  1014  0    3 13:23 ?        00:00:00 /usr/lib/colord/colord
+colord    1014     1  1018  0    3 13:23 ?        00:00:00 /usr/lib/colord/colord
+colord    1014     1  1019  0    3 13:23 ?        00:00:00 /usr/lib/colord/colord
+rtkit     1025     1  1025  0    3 13:23 ?        00:00:00 /usr/lib/rtkit/rtkit-daemon
+rtkit     1025     1  1026  0    3 13:23 ?        00:00:00 /usr/lib/rtkit/rtkit-daemon
+rtkit     1025     1  1027  0    3 13:23 ?        00:00:00 /usr/lib/rtkit/rtkit-daemon
+root      1057     1  1057  0    1 13:23 ?        00:00:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root      1058     1  1058  0    3 13:23 ?        00:00:00 /usr/lib/packagekit/packagekitd
+root      1058     1  1059  0    3 13:23 ?        00:00:00 /usr/lib/packagekit/packagekitd
+root      1058     1  1061  0    3 13:23 ?        00:00:00 /usr/lib/packagekit/packagekitd
+root      1074   944  1074  0    3 13:25 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+root      1074   944  1075  0    3 13:25 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+root      1074   944  1077  0    3 13:25 ?        00:00:00 gdm-session-worker [pam/gdm-password]
+oscread+  1079     1  1079  0    1 13:25 ?        00:00:00 /lib/systemd/systemd --user
+oscread+  1080  1079  1080  0    1 13:25 ?        00:00:00 (sd-pam)
+oscread+  1084     1  1084  0    5 13:25 ?        00:00:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+oscread+  1084     1  1085  0    5 13:25 ?        00:00:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+oscread+  1084     1  1218  0    5 13:25 ?        00:00:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+oscread+  1084     1  1219  0    5 13:25 ?        00:00:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+oscread+  1084     1  1221  0    5 13:25 ?        00:00:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+oscread+  1087  1074  1087  0    4 13:25 ?        00:00:00 x-session-manager
+oscread+  1087  1074  1200  0    4 13:25 ?        00:00:00 x-session-manager
+oscread+  1087  1074  1203  0    4 13:25 ?        00:00:00 x-session-manager
+oscread+  1087  1074  1205  0    4 13:25 ?        00:00:00 x-session-manager
+oscread+  1135     1  1135  0    1 13:25 ?        00:00:00 /usr/bin/VBoxClient --checkhostversion
+oscread+  1140     1  1140  0    1 13:25 ?        00:00:00 /usr/bin/VBoxClient --display
+oscread+  1145     1  1145  0    1 13:25 ?        00:00:00 /usr/bin/VBoxClient --seamless
+oscread+  1153     1  1153  0    1 13:25 ?        00:00:00 /usr/bin/VBoxClient --draganddrop
+oscread+  1173  1087  1173  0    1 13:25 ?        00:00:00 /usr/bin/ssh-agent /usr/bin/dbus-launch --exit-with-sessio
+oscread+  1176     1  1176  0    1 13:25 ?        00:00:00 dbus-launch --autolaunch=982e471ca2a94825b7d1fd0a90dcba3d
+oscread+  1180     1  1180  0    1 13:25 ?        00:00:00 /usr/bin/dbus-launch --exit-with-session x-session-manager
+oscread+  1184     1  1184  0    1 13:25 ?        00:00:00 /usr/bin/dbus-daemon --fork --print-pid 5 --print-address
+oscread+  1186     1  1186  0    1 13:25 ?        00:00:00 /usr/bin/dbus-daemon --fork --print-pid 5 --print-address
+oscread+  1194     1  1194  0    4 13:25 ?        00:00:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+oscread+  1194     1  1195  0    4 13:25 ?        00:00:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+oscread+  1194     1  1197  0    4 13:25 ?        00:00:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+oscread+  1194     1  1199  0    4 13:25 ?        00:00:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+oscread+  1198  1194  1198  0    1 13:25 ?        00:00:00 /usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibil
+oscread+  1202     1  1202  0    2 13:25 ?        00:00:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-sessio
+oscread+  1202     1  1206  0    2 13:25 ?        00:00:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-sessio
+oscread+  1214  1087  1214  0    5 13:25 ?        00:00:00 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+oscread+  1214  1087  1224  0    5 13:25 ?        00:00:00 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+oscread+  1214  1087  1225  0    5 13:25 ?        00:00:00 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+oscread+  1214  1087  1227  0    5 13:25 ?        00:00:00 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+oscread+  1214  1087  1234  0    5 13:25 ?        00:00:01 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+oscread+  1229     1  1229  0    3 13:25 ?        00:00:00 /usr/bin/pulseaudio --start
+oscread+  1229     1  1243  0    3 13:25 ?        00:00:00 /usr/bin/pulseaudio --start
+oscread+  1229     1  1244  0    3 13:25 ?        00:00:00 /usr/bin/pulseaudio --start
+oscread+  1231     1  1231  0    2 13:25 ?        00:00:00 /usr/lib/gvfs/gvfsd
+oscread+  1231     1  1232  0    2 13:25 ?        00:00:00 /usr/lib/gvfs/gvfsd
+oscread+  1236     1  1236  0    5 13:25 ?        00:00:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_wri
+oscread+  1236     1  1239  0    5 13:25 ?        00:00:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_wri
+oscread+  1236     1  1240  0    5 13:25 ?        00:00:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_wri
+oscread+  1236     1  1241  0    5 13:25 ?        00:00:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_wri
+oscread+  1236     1  1242  0    5 13:25 ?        00:00:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_wri
+oscread+  1248     1  1248  0    3 13:25 ?        00:00:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+oscread+  1248     1  1252  0    3 13:25 ?        00:00:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+oscread+  1248     1  1259  0    3 13:25 ?        00:00:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+oscread+  1250     1  1250  0    1 13:25 ?        00:00:00 /bin/sh /usr/bin/start-pulseaudio-x11
+oscread+  1251  1250  1251  0    1 13:25 ?        00:00:00 /usr/bin/xprop -root -spy
+root      1253     1  1253  0    5 13:25 ?        00:00:00 /usr/lib/udisks2/udisksd --no-debug
+root      1253     1  1254  0    5 13:25 ?        00:00:00 /usr/lib/udisks2/udisksd --no-debug
+root      1253     1  1256  0    5 13:25 ?        00:00:00 /usr/lib/udisks2/udisksd --no-debug
+root      1253     1  1257  0    5 13:25 ?        00:00:00 /usr/lib/udisks2/udisksd --no-debug
+root      1253     1  1258  0    5 13:25 ?        00:00:00 /usr/lib/udisks2/udisksd --no-debug
+oscread+  1262     1  1262  0    2 13:25 ?        00:00:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+oscread+  1262     1  1263  0    2 13:25 ?        00:00:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+oscread+  1265     1  1265  0    4 13:25 ?        00:00:00 /usr/lib/gnome-online-accounts/goa-daemon
+oscread+  1265     1  1266  0    4 13:25 ?        00:00:00 /usr/lib/gnome-online-accounts/goa-daemon
+oscread+  1265     1  1268  0    4 13:25 ?        00:00:00 /usr/lib/gnome-online-accounts/goa-daemon
+oscread+  1265     1  1272  0    4 13:25 ?        00:00:00 /usr/lib/gnome-online-accounts/goa-daemon
+oscread+  1274     1  1274  0    3 13:25 ?        00:00:00 /usr/lib/telepathy/mission-control-5
+oscread+  1274     1  1281  0    3 13:25 ?        00:00:00 /usr/lib/telepathy/mission-control-5
+oscread+  1274     1  1282  0    3 13:25 ?        00:00:00 /usr/lib/telepathy/mission-control-5
+oscread+  1275     1  1275  0    2 13:25 ?        00:00:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+oscread+  1275     1  1277  0    2 13:25 ?        00:00:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+oscread+  1280     1  1280  0    2 13:25 ?        00:00:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+oscread+  1280     1  1284  0    2 13:25 ?        00:00:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+oscread+  1286     1  1286  0    3 13:25 ?        00:00:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+oscread+  1286     1  1287  0    3 13:25 ?        00:00:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+oscread+  1286     1  1289  0    3 13:25 ?        00:00:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+oscread+  1290  1087  1290  0    7 13:25 ?        00:00:09 /usr/bin/gnome-shell
+oscread+  1290  1087  1295  0    7 13:25 ?        00:00:00 /usr/bin/gnome-shell
+oscread+  1290  1087  1300  0    7 13:25 ?        00:00:00 /usr/bin/gnome-shell
+oscread+  1290  1087  1304  0    7 13:25 ?        00:00:00 /usr/bin/gnome-shell
+oscread+  1290  1087  1305  0    7 13:25 ?        00:00:00 /usr/bin/gnome-shell
+oscread+  1290  1087  1306  0    7 13:25 ?        00:00:00 /usr/bin/gnome-shell
+oscread+  1290  1087  1307  0    7 13:25 ?        00:00:00 /usr/bin/gnome-shell
+oscread+  1294     1  1294  0    2 13:25 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-printer
+oscread+  1294     1  1296  0    2 13:25 ?        00:00:00 /usr/lib/gnome-settings-daemon/gsd-printer
+oscread+  1313     1  1313  0    5 13:25 ?        00:00:00 /usr/lib/gnome-shell/gnome-shell-calendar-server
+oscread+  1313     1  1315  0    5 13:25 ?        00:00:00 /usr/lib/gnome-shell/gnome-shell-calendar-server
+oscread+  1313     1  1325  0    5 13:25 ?        00:00:00 /usr/lib/gnome-shell/gnome-shell-calendar-server
+oscread+  1313     1  1326  0    5 13:25 ?        00:00:00 /usr/lib/gnome-shell/gnome-shell-calendar-server
+oscread+  1313     1  1436  0    5 13:25 ?        00:00:00 /usr/lib/gnome-shell/gnome-shell-calendar-server
+oscread+  1317     1  1317  0    3 13:25 ?        00:00:00 /usr/lib/evolution/evolution-source-registry
+oscread+  1317     1  1318  0    3 13:25 ?        00:00:00 /usr/lib/evolution/evolution-source-registry
+oscread+  1317     1  1322  0    3 13:25 ?        00:00:00 /usr/lib/evolution/evolution-source-registry
+oscread+  1330  1087  1330  0    5 13:25 ?        00:00:00 /usr/lib/evolution/3.12/evolution-alarm-notify
+oscread+  1330  1087  1433  0    5 13:25 ?        00:00:00 /usr/lib/evolution/3.12/evolution-alarm-notify
+oscread+  1330  1087  1443  0    5 13:25 ?        00:00:00 /usr/lib/evolution/3.12/evolution-alarm-notify
+oscread+  1330  1087  1444  0    5 13:25 ?        00:00:00 /usr/lib/evolution/3.12/evolution-alarm-notify
+oscread+  1330  1087  1446  0    5 13:25 ?        00:00:00 /usr/lib/evolution/3.12/evolution-alarm-notify
+oscread+  1331  1087  1331  0    3 13:25 ?        00:00:00 nm-applet
+oscread+  1331  1087  1349  0    3 13:25 ?        00:00:00 nm-applet
+oscread+  1331  1087  1395  0    3 13:25 ?        00:00:00 nm-applet
+oscread+  1333  1087  1333  0    3 13:25 ?        00:00:00 /usr/lib/tracker/tracker-miner-user-guides
+oscread+  1333  1087  1415  0    3 13:25 ?        00:00:00 /usr/lib/tracker/tracker-miner-user-guides
+oscread+  1333  1087  1532  0    3 13:25 ?        00:00:00 /usr/lib/tracker/tracker-miner-user-guides
+oscread+  1339     1  1339  0    1 13:25 ?        00:00:00 /usr/bin/VBoxClient --clipboard
+oscread+  1343  1087  1343  0    4 13:25 ?        00:00:00 nautilus -n
+oscread+  1343  1087  1425  0    4 13:25 ?        00:00:00 nautilus -n
+oscread+  1343  1087  1435  0    4 13:25 ?        00:00:00 nautilus -n
+oscread+  1343  1087  1445  0    4 13:25 ?        00:00:00 nautilus -n
+oscread+  1350     1  1350  0    8 13:25 ?        00:00:00 /usr/lib/tracker/tracker-store
+oscread+  1350     1  1410  0    8 13:25 ?        00:00:00 /usr/lib/tracker/tracker-store
+oscread+  1350     1  1411  0    8 13:25 ?        00:00:00 /usr/lib/tracker/tracker-store
+oscread+  1350     1  1412  0    8 13:25 ?        00:00:00 /usr/lib/tracker/tracker-store
+oscread+  1350     1  1428  0    8 13:25 ?        00:00:00 /usr/lib/tracker/tracker-store
+oscread+  1350     1  1429  0    8 13:25 ?        00:00:00 /usr/lib/tracker/tracker-store
+oscread+  1350     1  1430  0    8 13:25 ?        00:00:00 /usr/lib/tracker/tracker-store
+oscread+  1350     1  1431  0    8 13:25 ?        00:00:00 /usr/lib/tracker/tracker-store
+oscread+  1354  1087  1354  0   14 13:25 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1354  1087  1417  0   14 13:25 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1354  1087  1418  0   14 13:25 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1354  1087  1420  0   14 13:25 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1354  1087  1506  0   14 13:25 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1354  1087  1507  0   14 13:25 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1354  1087  1508  0   14 13:25 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1354  1087  1509  0   14 13:25 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1354  1087  1510  0   14 13:25 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1354  1087  1511  0   14 13:25 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1354  1087  1512  0   14 13:25 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1354  1087  1513  0   14 13:25 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1354  1087  1514  0   14 13:25 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1354  1087  1515  0   14 13:25 ?        00:00:00 /usr/lib/tracker/tracker-extract
+oscread+  1359     1  1359  0    1 13:25 ?        00:00:00 /usr/bin/VBoxClient --display
+oscread+  1366     1  1366  0    1 13:25 ?        00:00:00 /usr/bin/VBoxClient --seamless
+oscread+  1371  1087  1371  0    4 13:25 ?        00:00:00 zeitgeist-datahub
+oscread+  1371  1087  1391  0    4 13:25 ?        00:00:00 zeitgeist-datahub
+oscread+  1371  1087  1407  0    4 13:25 ?        00:00:00 zeitgeist-datahub
+oscread+  1371  1087  1426  0    4 13:25 ?        00:00:00 zeitgeist-datahub
+oscread+  1375     1  1375  0    1 13:25 ?        00:00:00 /usr/bin/VBoxClient --draganddrop
+oscread+  1377  1087  1377  0    4 13:25 ?        00:00:00 /usr/lib/tracker/tracker-miner-fs
+oscread+  1377  1087  1416  0    4 13:25 ?        00:00:00 /usr/lib/tracker/tracker-miner-fs
+oscread+  1377  1087  1419  0    4 13:25 ?        00:00:00 /usr/lib/tracker/tracker-miner-fs
+oscread+  1377  1087  1421  0    4 13:25 ?        00:00:00 /usr/lib/tracker/tracker-miner-fs
+oscread+  1388  1087  1388  0    3 13:25 ?        00:00:00 /usr/lib/tracker/tracker-miner-apps
+oscread+  1388  1087  1414  0    3 13:25 ?        00:00:00 /usr/lib/tracker/tracker-miner-apps
+oscread+  1388  1087  1534  0    3 13:25 ?        00:00:00 /usr/lib/tracker/tracker-miner-apps
+oscread+  1393     1  1393  0    2 13:25 ?        00:00:00 /usr/bin/zeitgeist-daemon
+oscread+  1393     1  1396  0    2 13:25 ?        00:00:00 /usr/bin/zeitgeist-daemon
+oscread+  1394  1087  1394  0    2 13:25 ?        00:00:00 /usr/bin/python /usr/share/system-config-printer/applet.py
+oscread+  1394  1087  1449  0    2 13:25 ?        00:00:00 /usr/bin/python /usr/share/system-config-printer/applet.py
+oscread+  1399     1  1399  0    1 13:25 ?        00:00:00 /usr/lib/i386-linux-gnu/gconf/gconfd-2
+oscread+  1405     1  1405  0    2 13:25 ?        00:00:00 /usr/lib/i386-linux-gnu/zeitgeist-fts
+oscread+  1405     1  1413  0    2 13:25 ?        00:00:00 /usr/lib/i386-linux-gnu/zeitgeist-fts
+oscread+  1422  1405  1422  0    1 13:25 ?        00:00:00 /bin/cat
+root      1424   477  1424  0    1 13:25 ?        00:00:00 sshd: oscreader [priv]
+oscread+  1439     1  1439  0    6 13:25 ?        00:00:00 /usr/lib/evolution/evolution-calendar-factory
+oscread+  1439     1  1466  0    6 13:25 ?        00:00:00 /usr/lib/evolution/evolution-calendar-factory
+oscread+  1439     1  1467  0    6 13:25 ?        00:00:00 /usr/lib/evolution/evolution-calendar-factory
+oscread+  1439     1  1468  0    6 13:25 ?        00:00:00 /usr/lib/evolution/evolution-calendar-factory
+oscread+  1439     1  1469  0    6 13:25 ?        00:00:00 /usr/lib/evolution/evolution-calendar-factory
+oscread+  1439     1  1481  0    6 13:25 ?        00:00:00 /usr/lib/evolution/evolution-calendar-factory
+oscread+  1456     1  1456  0    6 13:25 ?        00:00:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.8 /org/gtk/gvfs/exe
+oscread+  1456     1  1457  0    6 13:25 ?        00:00:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.8 /org/gtk/gvfs/exe
+oscread+  1456     1  1458  0    6 13:25 ?        00:00:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.8 /org/gtk/gvfs/exe
+oscread+  1456     1  1460  0    6 13:25 ?        00:00:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.8 /org/gtk/gvfs/exe
+oscread+  1456     1  1463  0    6 13:25 ?        00:00:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.8 /org/gtk/gvfs/exe
+oscread+  1456     1  1465  0    6 13:25 ?        00:00:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.8 /org/gtk/gvfs/exe
+oscread+  1479     1  1479  0    2 13:25 ?        00:00:00 /usr/lib/gvfs/gvfsd-metadata
+oscread+  1479     1  1482  0    2 13:25 ?        00:00:00 /usr/lib/gvfs/gvfsd-metadata
+oscread+  1491     1  1491  0    3 13:25 ?        00:00:00 /usr/lib/gvfs/gvfsd-burn --spawner :1.8 /org/gtk/gvfs/exec
+oscread+  1491     1  1492  0    3 13:25 ?        00:00:00 /usr/lib/gvfs/gvfsd-burn --spawner :1.8 /org/gtk/gvfs/exec
+oscread+  1491     1  1494  0    3 13:25 ?        00:00:00 /usr/lib/gvfs/gvfsd-burn --spawner :1.8 /org/gtk/gvfs/exec
+oscread+  1495  1424  1495  0    1 13:25 ?        00:00:00 sshd: oscreader@pts/0
+oscread+  1496  1495  1496  0    1 13:25 pts/0    00:00:00 -bash
+root     12138     2 12138  0    1 14:05 ?        00:00:00 [kworker/0:2]
+root     13114     2 13114  0    1 14:11 ?        00:00:00 [kworker/0:0]
+root     14089     2 14089  0    1 14:16 ?        00:00:00 [kworker/0:1]
+oscread+ 15503  1135 15503  0    1 14:20 ?        00:00:00 /usr/bin/VBoxClient --checkhostversion
+oscread+ 15529  1496 15529  0    1 14:20 pts/0    00:00:00 ps -eLf
+oscreader@OSC:project_2_part_2$
