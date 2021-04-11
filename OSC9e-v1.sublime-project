@@ -1,0 +1,39 @@
+{
+    "folders":
+    [
+        {
+            "follow_symlinks": true,
+            "path": "/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/"
+        },
+        {
+            "file_exclude_patterns":
+            [
+                "a.out",
+                "*.class",
+                "*.cmd",
+                "*.ko",
+                "*.mod.c",
+                "*.order",
+                "*.symvers",
+                "*.out",
+                "*.mod",
+                "*.o"
+            ],
+            "follow_symlinks": true,
+            "path": "."
+        },
+        {
+            "path":"../seatest/"
+        }
+    ],
+    "settings": {
+        "translate_tabs_to_spaces": true,
+        // Set to true to removing trailing white space on save
+        "trim_trailing_white_space_on_save": false,
+        // The number of spaces a tab is considered equal to
+        "tab_size": 2
+        // Set to "none" to turn off drawing white space, "selection" to draw only the
+        // white space within the selection, and "all" to draw all white space
+        //"draw_white_space": "all"
+    }
+}
